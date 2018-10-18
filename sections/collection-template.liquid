@@ -1,6 +1,5 @@
 {%- assign limit = section.settings.products | times: section.settings.rows -%}
 {%- assign totalProducts = collection.products.size -%}
-{{ 'gallery.scss.css' | asset_url | stylesheet_tag }}
 <style>
 .gallery {
   display: grid;
@@ -20,8 +19,6 @@
 
 .image {
   background-color: #444;
-}
-.gallery-1 {
   position: relative;
 }
 
@@ -84,6 +81,22 @@
  height: 0;
  padding-top: 150%;
 }
+
+.gallery-image {
+  position: absolute;
+     max-width: 100%;
+     width: 100%;
+     height: auto;
+     top: 50%;     
+     left: 50%;
+     transform: translate( -50%, -50%);
+}
+
+.gallery-image.landscape {
+    height: 100%;
+    width: auto;
+}
+
 </style>
 
 <div class="collection-template" data-section-id="{{ section.id }}" data-section-type="collection-template">
@@ -100,11 +113,16 @@
           {% endif %}
         </header>
 
+
         <div class="gallery gallery-1">
-            <div class="image image-1"></div>
-            <div class="image image-2"></div>
+            <div class="image image-1">
+              <img class="gallery-image" src="{{'tote-ladder.jpg' | asset_url }}">
+            </div>
+            <div class="image image-2">
+              <img class="gallery-image landscape" src="{{'may-shirt.jpg' | asset_url }}">              
+            </div>
             <div class="text-block">this is a  block of text this is a  block of text this is a 
-              block of textthis is a  block of text </div>
+              block of text this is a  block of text </div>
         </div>
         <div class="gallery-2">
             <div class="image full-width-image"></div>
