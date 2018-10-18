@@ -1,0 +1,235 @@
+{%- assign limit = section.settings.products | times: section.settings.rows -%}
+{%- assign totalProducts = collection.products.size -%}
+{{ 'gallery.scss.css' | asset_url | stylesheet_tag }}
+<style>
+.gallery {
+  display: grid;
+  grid-gap: 7px;
+  grid-row-gap: 100px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: [row] auto [row];
+  overflow: hidden;
+  margin: 100px 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.image {
+  background-color: #444;
+}
+.gallery-1 {
+  position: relative;
+}
+
+.gallery-1 > .image-1{
+  grid-column: 2/6;
+  height: 0;
+  padding-top: 150%;
+}
+
+.gallery-1 > .image-2{
+ grid-column: 7/12;
+ height: 0;
+ padding-top: 66.7%;
+}
+
+.gallery-1 > .text-block {
+  grid-column: 7/12;
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.gallery-2 > .full-width-image {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.gallery-3 > .image-1{
+  grid-column: 2/8;
+  height: 0;
+  padding-top: 66.7%;
+}
+
+.gallery-3 > .image-2{
+ grid-column: 6/12;
+ height: 0;
+ padding-top: 66.7%;
+}
+
+.gallery-4 > .image-1{
+  grid-column: 2/8;
+  height: 0;
+  padding-top: 66.7%;
+}
+
+.gallery-4 > .image-2{
+ grid-column: 2/7;
+ height: 0;
+ padding-top: 66.7%;
+ align-self: center;
+}
+.gallery-4 > .image-3{
+ grid-column: 8/12;
+ height: 0;
+ padding-top: 150%;
+}
+</style>
+
+<div class="collection-template" data-section-id="{{ section.id }}" data-section-type="collection-template">
+
+  <div class="page-width">
+    <div class="grid text-center">
+      <div class="grid__item medium-up--ten-twelfths medium-up--push-one-twelfth">
+        <header class="section-header">
+          <h1 class="section-header__title h2">{{ collection.title }}</h1>
+          {% if collection.description != blank %}
+            <div class="section-header__description rte">
+              {{ collection.description }}
+            </div>
+          {% endif %}
+        </header>
+
+        <div class="gallery gallery-1">
+            <div class="image image-1"></div>
+            <div class="image image-2"></div>
+            <div class="text-block">this is a  block of text this is a  block of text this is a 
+              block of textthis is a  block of text </div>
+        </div>
+        <div class="gallery-2">
+            <div class="image full-width-image"></div>
+        </div>
+        <div class="gallery gallery-3">
+            <div class="image image-1"></div>
+            <div class="image image-2"></div>
+        </div>
+        <div class="gallery gallery-4">
+            <div class="image image-1"></div>
+            <div class="image image-2"></div>
+            <div class="image image-3"></div>
+        </div>
+
+      
+ 
+      
+      </div>
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Collection",
+  "settings": [
+    {
+      "type": "select",
+      "id": "products",
+      "label": "Products per row",
+      "default": "2",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "rows",
+      "label": "Rows per page",
+      "default": "4",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "product_tags_enable",
+      "label": "Enable tag filtering"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_sorting_enable",
+      "label": "Enable collection sorting"
+    },
+    {
+      "type": "header",
+      "content": "Collection image"
+    },
+    {
+      "type": "checkbox",
+      "id": "collection_hero_image",
+      "label": "Show collection image"
+    },
+    {
+      "type": "checkbox",
+      "id": "collection_hero_image_parallax",
+      "label": "Show collection image parallax animation"
+    },
+    {
+      "type": "header",
+      "content": "Products"
+    },
+    {
+      "type": "select",
+      "id": "grid_style",
+      "label": "Grid style",
+      "default": "collage",
+      "options": [
+        {
+          "value": "collage",
+          "label": "Collage"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_spacing",
+      "label": "Enable image spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show product vendor",
+      "default": true
+    }
+  ]
+}
+{% endschema %}
