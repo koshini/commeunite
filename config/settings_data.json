@@ -4,28 +4,28 @@
     "color_header_text": "#000000",
     "color_primary_heading_text": "#000000",
     "color_primary_body_text": "#4a4a4a",
-    "color_footer_text": "#ffffff",
+    "color_footer_text": "#4a4a4a",
     "color_button_text": "#ffffff",
     "color_header_bg": "#fff",
-    "color_footer_bg": "#4a4a4a",
+    "color_footer_bg": "#f1f1f1",
     "color_main_bg": "#ffffff",
     "color_secondary_bg": "#f7f7f7",
     "color_product_cards": "#ebebeb",
     "color_form_elements": "#f1f1f1",
     "color_cart_flag": "#f1f1f1",
     "type_base_size": "62.5%",
-    "type_header_font": "akko_n4",
-    "type_base_font": "din_next_n4",
+    "type_header_font": "roboto_mono_n5",
+    "type_base_font": "roboto_mono_n3",
     "show_cart_drawer": true,
     "show_cart_note": false,
     "share_image": "",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/commeunite",
     "social_twitter_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/commeunite",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
     "social_youtube_link": "",
@@ -50,6 +50,43 @@
     "sections": {
       "slideshow": {
         "type": "slideshow",
+        "blocks": {
+          "1540686374454": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tote-shini.jpg",
+              "alignment": "center center",
+              "title": "",
+              "button": "Morocco I",
+              "cta_link": ""
+            }
+          },
+          "1540686882698": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/may-shirt.jpg",
+              "alignment": "center center",
+              "title": "",
+              "button": "Morocco II",
+              "cta_link": ""
+            }
+          },
+          "1540686931384": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2880-black-shhirt.jpg",
+              "alignment": "center center",
+              "title": "",
+              "button": "Morocco III",
+              "cta_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1540686374454",
+          "1540686882698",
+          "1540686931384"
+        ],
         "settings": {
           "cta": "Shop now",
           "show_overlay": false,
@@ -62,8 +99,8 @@
         "type": "header",
         "settings": {
           "icon": "bag",
-          "logo": "",
-          "logo_max_height": "18",
+          "logo": "shopify:\/\/shop_images\/logo-800.png",
+          "logo_max_height": "40",
           "enable_transparent": true,
           "transparent_logo": "",
           "transparent_text_color": "#4a4a4a",
@@ -101,34 +138,17 @@
           "newsletter_subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
         }
       },
-      "feature-row": {
-        "type": "feature-row",
-        "settings": {
-          "size": "large",
-          "background_color": "#fafafa",
-          "image": "shopify:\/\/shop_images\/tote_mock_up.jpg",
-          "image_crop": "square",
-          "alignment": "center center",
-          "title": "02000010 Tote Bag",
-          "text": "<p>Dedicated for those who keep pushing against resistance.<\/p>",
-          "use_second_button": false,
-          "button_label": "",
-          "button_link": "shopify:\/\/products\/02000010-tote-bag",
-          "desktop_layout": "left",
-          "mobile_layout": "top"
-        }
-      },
       "gallery": {
         "type": "gallery",
         "blocks": {
           "1486502632685-0": {
             "type": "image",
             "settings": {
-              "image": "",
+              "image": "shopify:\/\/shop_images\/core-collection-layout.jpg",
               "alignment": "center center",
-              "icon": "checkmark",
-              "cta_label": "Talk about your brand",
-              "link": ""
+              "icon": "none",
+              "cta_label": "",
+              "link": "shopify:\/\/pages\/core-collections"
             }
           }
         },
@@ -136,126 +156,11 @@
           "1486502632685-0"
         ],
         "settings": {
-          "section_height": "medium",
-          "show_overlay": true,
+          "section_height": "large",
+          "show_overlay": false,
           "overlay_color": "#000000",
           "overlay_text": "#ffffff",
           "overlay_opacity": "0.5"
-        }
-      },
-      "featured-slider": {
-        "type": "featured-slider",
-        "blocks": {
-          "1486503036275-0": {
-            "type": "slide",
-            "settings": {
-              "background_color": "#ebebeb",
-              "show_image": true,
-              "slide_image": "",
-              "slide_title": "Featured variant",
-              "slide_button_text": "",
-              "slide_button_url": ""
-            }
-          },
-          "1486503036275-2": {
-            "type": "slide",
-            "settings": {
-              "background_color": "#ebebeb",
-              "show_image": true,
-              "slide_image": "",
-              "slide_title": "Featured variant",
-              "slide_button_text": "",
-              "slide_button_url": ""
-            }
-          },
-          "1486503036275-1": {
-            "type": "slide",
-            "settings": {
-              "background_color": "#ebebeb",
-              "show_image": true,
-              "slide_image": "",
-              "slide_title": "Featured variant",
-              "slide_button_text": "",
-              "slide_button_url": ""
-            }
-          },
-          "1487016418120": {
-            "type": "slide",
-            "settings": {
-              "background_color": "#ebebeb",
-              "show_image": false,
-              "slide_image": "",
-              "slide_title": "",
-              "slide_button_text": "View",
-              "slide_button_url": ""
-            }
-          }
-        },
-        "block_order": [
-          "1486503036275-0",
-          "1486503036275-2",
-          "1486503036275-1",
-          "1487016418120"
-        ],
-        "settings": {
-          "use_second_button": true,
-          "text_color": "#000000",
-          "cover_image": "",
-          "cover_title": "Showcase some product information",
-          "cover_title_desktop_position": "center",
-          "show_overlay": true,
-          "overlay_color": "rgba(0,0,0,0)",
-          "overlay_text": "#000000",
-          "overlay_opacity": "0.5"
-        }
-      },
-      "1486583009346": {
-        "type": "feature-row",
-        "settings": {
-          "size": "large",
-          "background_color": "#ffffff",
-          "image": "",
-          "image_crop": "none",
-          "alignment": "top left",
-          "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-          "use_second_button": false,
-          "button_label": "About us",
-          "button_link": "",
-          "desktop_layout": "right",
-          "mobile_layout": "bottom"
-        }
-      },
-      "1486584613697": {
-        "type": "hero",
-        "settings": {
-          "hero_size": "x-large",
-          "image": "",
-          "alignment": "center center",
-          "title": "",
-          "text": "<p><strong>Comme Unit&eacute; promotes creation before comsumption.<\/strong><\/p>\n<p><strong>Think twice before you buy.<\/strong><\/p>",
-          "text_size": "large",
-          "use_second_button": false,
-          "button_label": "",
-          "button_link": "shopify:\/\/pages\/about",
-          "show_overlay": true,
-          "overlay_color": "#f8d1d1",
-          "overlay_text": "#282727",
-          "overlay_opacity": "0.25"
-        }
-      },
-      "1486584983006": {
-        "type": "highlight",
-        "settings": {
-          "border_color": "#dfa160",
-          "content_alignment": "middle",
-          "image": "",
-          "image_position": "back",
-          "heading": "Gift card",
-          "text": "Looking for something for someone special? A gift card to our store is the perfect idea!",
-          "use_second_button": false,
-          "button_text": "",
-          "button_link": ""
         }
       },
       "collection-template": {
@@ -301,125 +206,41 @@
           "show_share_buttons": true
         }
       },
-      "1492008725684": {
-        "type": "hero",
-        "settings": {
-          "hero_size": "x-large",
-          "image": "",
-          "alignment": "top center",
-          "title": "",
-          "text": "",
-          "text_size": "medium",
-          "use_second_button": false,
-          "button_label": "Read our blog",
-          "button_link": "",
-          "show_overlay": false,
-          "overlay_color": "#000000",
-          "overlay_text": "#3a3a3a",
-          "overlay_opacity": "0.5"
-        }
-      },
-      "1492807242211": {
-        "type": "custom-content",
-        "blocks": {
-          "1492807242211-0": {
-            "type": "text",
-            "settings": {
-              "heading_text": "",
-              "heading_color": "#3a3a3a",
-              "heading_style": "h3",
-              "paragraph_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-              "paragraph_color": "#4a4a4a",
-              "paragraph_size": "1",
-              "width": "100%",
-              "alignment": "center",
-              "align_text": "center"
-            }
-          },
-          "1528324815802": {
-            "type": "video",
-            "settings": {
-              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-              "width": "100%",
-              "alignment": "top"
-            }
-          }
-        },
-        "block_order": [
-          "1492807242211-0",
-          "1528324815802"
-        ],
-        "settings": {
-          "heading_text": "",
-          "heading_color": "#3a3a3a",
-          "background_color": "",
-          "top_margin": true,
-          "bottom_margin": false
-        }
-      },
       "cart-template": {
         "type": "cart-template",
         "settings": {
           "cart_notes_enable": true
         }
       },
-      "1537546587046": {
-        "type": "collection-list",
+      "1540686100396": {
+        "type": "gallery",
         "blocks": {
-          "1537546587046-0": {
-            "type": "collection",
+          "1540768950489": {
+            "type": "image",
             "settings": {
-              "collection": ""
-            }
-          },
-          "1537546587046-1": {
-            "type": "collection",
-            "settings": {
-              "collection": ""
-            }
-          },
-          "1537546587046-2": {
-            "type": "collection",
-            "settings": {
-              "collection": ""
+              "image": "shopify:\/\/shop_images\/emovu-collection-collage-new.jpg",
+              "alignment": "center center",
+              "icon": "none",
+              "cta_label": "",
+              "link": ""
             }
           }
         },
         "block_order": [
-          "1537546587046-0",
-          "1537546587046-1",
-          "1537546587046-2"
+          "1540768950489"
         ],
         "settings": {
-          "title": "Collection list",
-          "grid": 3
-        }
-      },
-      "1539122412864": {
-        "type": "video",
-        "settings": {
-          "cover_text": "",
-          "video_url": "https:\/\/vimeo.com\/295096784",
-          "cover_image": "shopify:\/\/shop_images\/5507-05.jpg",
-          "cover_image_position": "center center",
+          "section_height": "large",
           "show_overlay": false,
-          "overlay_color": "#000000",
+          "overlay_color": "#9454f2",
           "overlay_text": "#ffffff",
-          "overlay_opacity": 30
+          "overlay_opacity": "0.25"
         }
       }
     },
     "content_for_index": [
-      "1539122412864",
-      "feature-row",
-      "1486584613697",
-      "1486583009346",
       "gallery",
-      "1492807242211",
-      "1486584983006",
-      "featured-slider",
-      "1492008725684",
-      "1537546587046"
+      "1540686100396"
     ]
   },
   "presets": {
