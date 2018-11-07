@@ -4381,7 +4381,7 @@ $image-bar-placeholder-border-color: rgba($color-body-text, 0.25);
     height: 357px;
   }
 
-/* fixed to be responsive  */
+/* custome */
   .image-bar--large & {
     height: 200px;
   }
@@ -5899,7 +5899,6 @@ input[type="number"].product-form__quantity-input {
 
 .section-header__title {
   margin-bottom: 0;
-  display: none;
 }
 
 .section-header__description,
@@ -8446,6 +8445,10 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
 /*================ Custom CSS for Comme Unite ================*/
+.gallery-wrapper {
+  margin: 50px 0;
+}
+
 .gallery {
   display: grid;
   grid-gap: 7px;
@@ -8482,6 +8485,7 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 .image {
   position: relative;
   overflow: hidden;
+  background-color: #444;
   
   img {
     padding-bottom: 5vmax;
@@ -8519,26 +8523,22 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   }    
 }
 
-.gallery-2 {
-    margin: 20vmin 0;
-  .full-width-image {
-    width: 100vw;
-    height: 66vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-  
-    .product-link {
-    position: absolute;
-    bottom: 0;
-    font-size: 2vmin;
+.full-width-image {
+  width: 100vw;
+  height: 66vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 20vmin -50vw;
+
+  .product-link {
+  position: absolute;
+  bottom: 0;
+  font-size: 2vmin;
 /*     top: 50%; */
-	left: 50%;
-    transform: translate(-50%, 0);
-  }
+  left: 50%;
+  transform: translate(-50%, 0);
+}
   
 }
 
@@ -8599,4 +8599,71 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.collection-grid {
+  margin: 10vmin 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  // grid-gap: 3px;
+  // grid-template-columns: repeat(24, 1fr);
+  // grid-template-rows: auto;
+  // overflow: hidden;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  // margin-bottom: 18vmin;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  .text-block {
+    // grid-column: 3/23;
+    width: 100%;
+    margin: 0 10% 10% 10%;
+  }
+
+  .image-1 {
+    // grid-column: 3/12;
+    width: 80%;
+    height: 0;
+    padding-top: 120%;
+    margin: 0 10% 10% 10%;
+
+    @include media-query($medium-up) {
+      margin: 0 5% 15vmin 10%;
+      width: 35%;
+      padding-top: 52.5%;
+    }
+
+  }
+
+  .image-2 {
+    width: 100%;
+    height: 0;
+    padding-top: 150%;
+    margin: 0 10% 10% 10%;
+
+    @include media-query($medium-up) {
+      margin: 0 10% 15vmin 5%;
+      width: 35%;
+      padding-top: 52.5%;
+    }
+  }
+}
+
+
+.full-width {
+  width: 100vw;
+  height: 66vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 0 -50vw 10% -50vw;
 }
