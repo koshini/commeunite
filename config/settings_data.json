@@ -51,41 +51,41 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "1540686374454": {
+          "1541732595439": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/tote-shini.jpg",
+              "image": "shopify:\/\/shop_images\/web-emovu-004.jpg",
               "alignment": "center center",
               "title": "",
-              "button": "Morocco I",
+              "button": "EMOVU I",
               "cta_link": ""
             }
           },
-          "1540686882698": {
+          "1541732554955": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/may-shirt.jpg",
+              "image": "shopify:\/\/shop_images\/LRM_EXPORT_295458730163695_20181027_232301888.jpeg",
               "alignment": "center center",
               "title": "",
-              "button": "Morocco II",
+              "button": "EMOVU II",
               "cta_link": ""
             }
           },
-          "1540686931384": {
+          "1541732700460": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2880-black-shhirt.jpg",
-              "alignment": "center center",
+              "image": "shopify:\/\/shop_images\/LRM_EXPORT_295448581443803_20181027_232251740.jpeg",
+              "alignment": "bottom center",
               "title": "",
-              "button": "Morocco III",
+              "button": "EMOVU III",
               "cta_link": ""
             }
           }
         },
         "block_order": [
-          "1540686374454",
-          "1540686882698",
-          "1540686931384"
+          "1541732595439",
+          "1541732554955",
+          "1541732700460"
         ],
         "settings": {
           "cta": "Shop now",
@@ -218,11 +218,11 @@
           "1540768950489": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/emovu-collection-collage-new.jpg",
+              "image": "shopify:\/\/shop_images\/emovu-collection-collage-1-launch.jpg",
               "alignment": "center center",
               "icon": "none",
               "cta_label": "",
-              "link": ""
+              "link": "shopify:\/\/pages\/emovu"
             }
           }
         },
@@ -239,8 +239,8 @@
       }
     },
     "content_for_index": [
-      "gallery",
-      "1540686100396"
+      "1540686100396",
+      "gallery"
     ]
   },
   "presets": {

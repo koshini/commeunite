@@ -4381,9 +4381,9 @@ $image-bar-placeholder-border-color: rgba($color-body-text, 0.25);
     height: 357px;
   }
 
-/* custome */
+/* custom */
   .image-bar--large & {
-    height: 200px;
+    height: 62.5vw;
   }
 
   .image-bar--x-large & {
@@ -4404,7 +4404,7 @@ $image-bar-placeholder-border-color: rgba($color-body-text, 0.25);
     }
 
     .image-bar--large & {
-      height: 650px;
+      height: 62.5vw;
     }
 
     .image-bar--x-large & {
@@ -6174,7 +6174,7 @@ $transition-image-slideshow: opacity 0.8s cubic-bezier(0.44, 0.13, 0.48, 0.87),
 }
 
 .slideshow__button-label {
-  color: $color-heading-text;
+  color: #FFF;
 
   @include media-query($medium-up) {
     padding: $gutter ($gutter * 2);
@@ -8479,22 +8479,21 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
     left: 0
 
   }
-  
-}
-  
-.image {
-  position: relative;
-  overflow: hidden;
-  background-color: #444;
-  
-  img {
-    padding-bottom: 5vmax;
+  .image {
+    position: relative;
+    overflow: hidden;
     
-    &.matt{
-      padding-bottom: 8vmax;
+    img {
+      padding-bottom: 5vmax;
+      
+      &.matt{
+        padding-bottom: 8vmax;
+      }
     }
   }
 }
+  
+
 
 
 .gallery-1 {
@@ -8535,7 +8534,6 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   position: absolute;
   bottom: 0;
   font-size: 2vmin;
-/*     top: 50%; */
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -8586,11 +8584,9 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform: translate(-50%, -50%);
 
   &.landscape {
-/*     height: 100%; */
     width: auto;
   }
 }
-
 
 .ahmet{
   width: 100%;
@@ -8603,6 +8599,11 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 .collection-grid {
   margin: 10vmin 0;
+
+  .image {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .row {
@@ -8611,26 +8612,20 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   flex-wrap: wrap;
   align-items: center;
   height: 100%;
-  // grid-gap: 3px;
-  // grid-template-columns: repeat(24, 1fr);
-  // grid-template-rows: auto;
-  // overflow: hidden;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  // margin-bottom: 18vmin;
   margin-left: -50vw;
   margin-right: -50vw;
 
   .text-block {
-    // grid-column: 3/23;
-    width: 100%;
-    margin: 0 10% 10% 10%;
+	text-align: justify;
+  width: 100%;
+  margin: 0 10% 10% 10%;
   }
 
   .image-1 {
-    // grid-column: 3/12;
     width: 80%;
     height: 0;
     padding-top: 120%;
@@ -8658,7 +8653,6 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 }
 
-
 .full-width {
   width: 100vw;
   height: 66vw;
@@ -8667,3 +8661,86 @@ $fast-drawer-transition: transform 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
   right: 50%;
   margin: 0 -50vw 10% -50vw;
 }
+
+
+// Core Page----------------------------------------------------------
+.core-image {
+  width: 100%;
+}
+
+.full-width-image {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: auto -50vw;
+
+  .product-link {
+    position: absolute;
+    // bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.text-block {
+  font-size: 2.5vmin;
+  text-align: justify;
+  line-height: 1.2;  
+}
+
+.product-link {
+  font-size: 2vmin;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10vw 3px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: auto -50vw;
+  padding: 9vw;
+  
+  @include media-query($large-up) {
+    padding: 0;
+    width: 920px;
+    margin: 20vh auto;
+    transform: translateX(-50%);
+    }
+
+  *{
+  grid-column: 1/-1;
+  }
+
+    .core-image {
+      &:nth-child(1) {
+        grid-column: 1/5;
+      }
+      &:nth-child(2) {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-column: 6/-1;
+      }
+
+      &:nth-child(4) {
+        grid-column: 1/5;
+      }
+
+      &:nth-child(5) {
+        grid-column: 6/-1;
+      }
+
+      &:nth-child(6) {
+        grid-column: 1/6;
+      }
+
+      &:nth-child(7) {
+        grid-column: 7/-1;
+      }
+    }
+}
+
+
